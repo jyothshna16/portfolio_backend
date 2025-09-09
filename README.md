@@ -31,13 +31,14 @@ The objective of the backend is to provide a secure and reliable server-side app
 ---
 
 ## Technologies Used
+- **Node.js**
+- **Express.js**
 - **MongoDB**
 - **Mongoose**
 - **dotenv**
 - **CORS**
 - **Nodemon** (Dev Dependency)
-- **Node.js**
-- **Express.js**
+
 
   ---
 
