@@ -31,7 +31,7 @@ The objective of the backend is to provide a secure and reliable server-side app
 ---
 
 ## Technologies Used
--** Node.js**
+-**Node.js**
 -**Express.js**
 - **MongoDB**
 - **Mongoose**
