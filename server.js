@@ -9,7 +9,13 @@ dotenv.config();
 
 const app = express();
 const cors = require('cors');
-app.use(cors());
+const corsConfig = {
+  origin: "*",
+  credential: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+};
+app.options("", cors(corsConfig));
+app.use(cors(corsConfig));
 const PORT = process.env.PORT || 5000;
 
 // Middlewares to read form bodies
@@ -39,4 +45,5 @@ app.use((err, _req, res, _next) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
